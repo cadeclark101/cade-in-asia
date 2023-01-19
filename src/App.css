@@ -36,3 +36,23 @@
     transform: rotate(360deg);
   }
 }
+
+#image-container{
+  height: 60vh;
+  float: left;
+  position: relative;
+  display: inline-block;
+}
+
+#title-container {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  border: black 1px solid
+}
+
+
