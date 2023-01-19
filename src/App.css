@@ -37,7 +37,7 @@
   }
 }
 
-#image-container{
+#sea-map-image-container{
   height: 60vh;
   float: left;
   position: relative;
@@ -55,20 +55,38 @@
   text-align: center;
 }
 
-#first-page-container {
+#title-section-container {
   width: 99vw;
   height: 100vh;
 }
 
-#intro-container {
-  background-color: rgba(52, 42, 41, 0.75);
+#intro-section-container {
   width: 99vw;
+  height: 100vh;
   display: inline-block;
   text-align: center;
 }
 
-#malaysia-section-container {
+#intro-text-container {
+  background-color: rgba(52, 42, 41, 0.75);
+}
+
+#singapore-section-container {
   width: 99vw;
-  border: solid black 1px;
+  height: 99vh;
+}
+
+#singapore-map-image-container {
+  float: right;
+}
+
+#singapore-title-container {
+  float: right;
+  clear: right;
+}
+
+#singapore-body-area {
+  display: flex;
+  flex-direction: column;
 }
 

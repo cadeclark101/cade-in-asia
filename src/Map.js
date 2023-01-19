@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import sea from './img/sea.png';
+
 
 export default class Map extends Component {
 
   render() {
     return(
-        <img src={sea} style={{ width: "auto", height: "100%" }} alt="sea" id="sea-snapshot"/>
+        <img src={this.props.map_location} style={{ "width": this.props.map_image_width, "height": this.props.map_image_height }} alt={this.props.image_alt} />
     )
   }
 
