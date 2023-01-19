@@ -1,12 +1,17 @@
 .flag-button {
-    width: 25px;
-    height: 15px;
-    position: absolute;
+    width: 5%;
+    height: 3%;
+	position: relative;
     background: none;
 	color: inherit;
 	border: none;
-	padding: 0;
+	padding: 1;
 	font: inherit;
 	cursor: pointer;
 	outline: inherit;
+	opacity: 0.8;
+}
+
+.flag-button-image {
+	border-radius: 5px;
 }

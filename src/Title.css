@@ -1,16 +1,14 @@
 #sub-title-text {
-    font: 900 40px Century Gothic, Arial;
-    font-size: 1.20em;
-    font-weight: bolder;
+    font: 100 20px Century Gothic, Arial;
+    font-weight: lighter;
     margin-top: 0px;
     color: white;
-    margin-bottom: 0px;
     text-align: center;
 }
 
 #main-title-text {
-    font: 900 40px Century Gothic, Arial;
-    color: #ddcecb;
+    font: 700 40px Century Gothic, Arial;
+    color: white;
     -webkit-text-stroke: 3px;
     font-size: 6em;
     margin-top: 0px;

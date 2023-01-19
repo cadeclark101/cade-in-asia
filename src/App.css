@@ -52,7 +52,23 @@
   margin-right: -50%;
   transform: translate(-50%, -50%);
   display: inline-block;
-  border: black 1px solid
+  text-align: center;
 }
 
+#first-page-container {
+  width: 99vw;
+  height: 100vh;
+}
+
+#intro-container {
+  background-color: rgba(52, 42, 41, 0.75);
+  width: 99vw;
+  display: inline-block;
+  text-align: center;
+}
+
+#malaysia-section-container {
+  width: 99vw;
+  border: solid black 1px;
+}
 
