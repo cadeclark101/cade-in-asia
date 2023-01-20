@@ -1,24 +1,37 @@
 import React, { Component } from 'react';
+
 import './Singapore.css';
 
-export default class Singapore extends Component {
+import Map from './Map';
+import Title from './Title';
+import IconButton from './IconButton';
 
+import singapore_map from './img/singapore_map.png';
+import plane_arrival_icon from './img/plane_arrival.png';
+
+function defaultView() {
+    return (
+        <React.Fragment>
+            <div id="singapore-map-image-container-default-view">
+                <Map map_location={singapore_map} map_image_height={"75%"} map_image_width={"auto"} image_alt={"map of singapore"} />
+
+                <div id="singapore-map-icon-container-default-view">
+                <IconButton icon_location={plane_arrival_icon} />
+                </div>
+            </div>
+
+            <div id="singapore-title-container-default-view">
+                <Title main_title={"Singapore."} sub_title={"Click an above location to see more."} />
+            </div>
+        </React.Fragment>
+    )
+}
+
+
+export default class Singapore extends Component {
     render() {
         return(
-            <React.Fragment>
-                <div id="placeholder-title-container">
-                    <h2 id="placeholder-text-title">Fear and Loathing.</h2>
-                </div>
-
-                <div id="placeholder-text-container">
-                    <div id="placeholder-text-container-left"> 
-                        <p class="placeholder-main-text">Singapore. A global financial center boasting some of the cleanest streets in the world. Akin to Dubai, it feels like a playground for the rich; featuring a multitude of 6 star hotels complemented by MICHELIN Star resturants, sprawling modern shopping malls and towering skyscrapers boasting lavish skybars.</p>
-                    </div>
-                    <div id="placeholder-text-container-right"> 
-                        <p class="placeholder-main-text">Despite this urban paradise - a combination of jet lag, home sickness and bad airplane food made me less than willing to explore. Knowing little about where I was or what I was going to do I set about finding my "hotel". <br /> <br /><span style={{"background-color": "#342a29"}}>This is where my journey began.</span> </p>
-                    </div>
-                </div>
-            </React.Fragment>
+            defaultView()
         )
         }
 }

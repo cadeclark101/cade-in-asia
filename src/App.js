@@ -7,7 +7,7 @@ import malaysia_flag from './img/malaysia_flag.png';
 import thailand_flag from './img/thailand_flag.png';
 import cambodia_flag from './img/cambodia_flag.png';
 import vietnam_flag from './img/vietnam_flag.png';
-import singapore_map from './img/singapore_map.png';
+
 
 
 import './App.css';
@@ -43,15 +43,6 @@ function App() {
       </div>
       
       <div id="singapore-section-container">
-
-        <div id="singapore-map-image-container">
-          <Map map_location={singapore_map} map_image_height={"500px"} map_image_width={"auto"} image_alt={"map of singapore"}/>
-        </div>
-
-        <div id="singapore-title-container">
-          <Title main_title={"Singapore."} sub_title={"Click an above location to see more."}/>
-        </div>
-
         <div id="singapore-body-area">
           <Singapore />
         </div>

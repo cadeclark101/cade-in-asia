@@ -29,11 +29,19 @@
 }
 
 
-
-#placeholder-text-container-left {
-    width: 50%;
+#singapore-map-image-container-default-view {
+    position: relative;
+  }
+  
+#singapore-title-container-default-view {
+    position: relative;
 }
 
-#placeholder-text-container-right {
-    width: 50%;
+#singapore-map-icon-container-default-view {
+    position: absolute;
+    width: 35px;
+    height: 25px;
+    top: 35%;
+    left: 75%;
+    background: none;
 }

@@ -1,0 +1,8 @@
+.icon-button {
+    background: none;
+	color: inherit;
+	padding: 0.2rem;
+	cursor: pointer;
+    border-color: turquoise;
+    border-radius: 100%;
+}

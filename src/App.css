@@ -76,16 +76,8 @@
   height: 99vh;
 }
 
-#singapore-map-image-container {
-  float: right;
-}
-
-#singapore-title-container {
-  float: right;
-  clear: right;
-}
-
 #singapore-body-area {
+  align-items: center;
   display: flex;
   flex-direction: column;
 }
