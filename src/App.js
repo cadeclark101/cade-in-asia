@@ -43,9 +43,7 @@ function App() {
       </div>
       
       <div id="singapore-section-container">
-        <div id="singapore-body-area">
           <Singapore />
-        </div>
       </div>
     </div>
   )

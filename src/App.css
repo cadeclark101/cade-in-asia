@@ -74,11 +74,11 @@
 #singapore-section-container {
   width: 99vw;
   height: 99vh;
-}
-
-#singapore-body-area {
   align-items: center;
   display: flex;
   flex-direction: column;
+  border: 1px solid black;
 }
+
+
 
