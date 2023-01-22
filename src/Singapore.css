@@ -21,13 +21,7 @@
     left: 75%;
 }
 
-#singapore-airport-view-container {
-    width: 100%;
-}
 
-#singapore-airport-view-text-container {
-    width: 100%;
-}
 
 .main-default-map-view-container{
     position: absolute;
@@ -38,3 +32,9 @@
 .main-default-map-view-container.icon-clicked {
     left: 50%; 
 }
+
+#singapore-main-container {
+    width: 99vw;
+    height: 99wh;
+}
+

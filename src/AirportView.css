@@ -1,0 +1,113 @@
+#singapore-airport-view-container {
+    position: relative;
+    width: 50%;
+    right: 0%;
+}
+
+#singapore-airport-view-title-container {
+    width: 100%;
+    vertical-align: auto;
+}
+
+#singapore-airport-view-body-container {
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    background-color: rgba(52, 42, 41, 0.5);
+    box-shadow: rgba(255, 255, 255, 0.3) 0px 3px 12px;
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+}
+
+
+#singapore-airport-view-box-one {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.singapore-airport-hidden-text {
+    display: none;
+}
+
+#singapore-airport-view-box-one:hover .singapore-airport-hidden-text {
+    display: block;
+}
+
+#singapore-airport-view-box-one:hover h2 {
+    display: none;
+}
+
+#singapore-airport-view-box-two {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+#singapore-airport-view-box-two:hover .singapore-airport-hidden-text {
+    display: block;
+}
+
+#singapore-airport-view-box-two:hover h2 {
+    display: none;
+}
+
+#singapore-airport-view-box-three {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+#singapore-airport-view-box-three:hover .singapore-airport-hidden-text {
+    display: block;
+}
+
+#singapore-airport-view-box-three:hover h2 {
+    display: none;
+}
+
+h2 {
+    font: 700 30px Century Gothic, Arial;
+    font-weight: bold;
+    color: white;
+    margin-top: 100%;
+    text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+h1 {
+    font: 700 50px Century Gothic, Arial;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+    font-style: italic;
+    text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+h1.left {
+    text-align: left;
+}
+
+h1.center {
+    text-align: center;
+}
+
+h1.right {
+    text-align: right;
+}
+
+p {
+    font: 700 15px Century Gothic, Arial;
+    font-weight: bold;
+    color: #ede6e4;
+    margin: 10;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: left;
+}

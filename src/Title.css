@@ -1,12 +1,13 @@
-#sub-title-text {
-    font: 100 20px Century Gothic, Arial;
+.sub-title-text {
+    font: 700 20px Century Gothic, Arial;
     font-weight: lighter;
+    -webkit-text-stroke: 1px;
     margin-top: 0px;
     color: white;
     text-align: center;
 }
 
-#main-title-text {
+.main-title-text {
     font: 700 40px Century Gothic, Arial;
     color: white;
     -webkit-text-stroke: 3px;
@@ -14,6 +15,7 @@
     margin-top: 0px;
     margin-bottom: 0px;
     text-align: center;
+    text-shadow: -10px 10px 0px black
 }
 
 

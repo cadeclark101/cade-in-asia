@@ -1,6 +1,7 @@
 import React, { Component, useState } from 'react';
 
 import './Singapore.css';
+import './AirportView.css';
 
 import Map from './Map';
 import Title from './Title';
@@ -8,6 +9,7 @@ import IconButton from './IconButton';
 
 import singapore_map from './img/singapore_map.png';
 import plane_arrival_icon from './img/plane_arrival.svg';
+import singapore_airport_logo from './img/singapore_airport_logo.png';
 
 class AirportView extends Component {
     
@@ -15,10 +17,52 @@ class AirportView extends Component {
         return (
             <React.Fragment>
                 <div id="singapore-airport-view-container">
-                    <div id="singapore-airport-view-text-container">
-                        <Title main_title={"LONDON"} />
-                        <Title main_title={"ABU DHABI"} />
-                        <Title main_title={"SINGAPORE"} />
+                    <div id="singapore-airport-view-title-container">
+                        <h1 className='left'>LONDON</h1>
+                        <h1 className='center'>ABU DHABI</h1>
+                        <h1 className='right'>SINGAPORE</h1>
+                    </div>
+
+                    <div id="singapore-airport-view-body-container">
+                        <div id="singapore-airport-view-box-one">
+                            <h2>PRE-DEPARTURE AND PLANNING</h2>
+                            <span className="singapore-airport-hidden-text">
+                                <p>A trip that had been on my mind since my first year at the University of Surrey demanded enough planning to make any persons head spin.</p> 
+                                <p>A considerable amount of prerequisites are often overlooked by would-be travellers and social media influencers. </p>
+                                <p>The ability to be <span style={{color: "turquoise"}}>flexible and decisive</span> helped me secure the best possible price for my flight while still maintaining realistic time goals.</p>
+                                <p>A quick sum up of said prerequisites (for entry to Singapore) includes: <span style={{color: "red"}}>COVID-19 documentation, recommended vaccinations, pre-booked residence, and approved airrval card.</span></p>
+                                <footer>More on travel planning can be found here.</footer>
+                            </span>
+                        </div>
+                        <div id="singapore-airport-view-box-two">
+                            <h2>THE SMELLIEST FLIGHT</h2>
+                            <span className="singapore-airport-hidden-text">
+                                <p>18 hours is a long time, especially when you are up twelve thousand meters in the air inside a metal can.</p>
+                                <p>It should come at no surprise that if you are planning to come halfway around the world that your initial flight will be long. Luckily, you can take measures to make this experience somewhat bearable without breaking the bank:</p>
+                                <p>FLY WITH A MIDDLE EASTERN AIRLINE.</p>
+                                <p>I flew with Etihad Airways for both legs of the journey and both were bearable compared to the atrocities I would have faced on any of the European airlines.</p>
+                                <p>When booking a flight, use multiple cheap-flight websites such as Skyscanner, Kayak and my personal favourite: Google Flights.</p>
+                                <footer>Make sure to clear your cookies and browsing history often when looking for flights!</footer>
+                            </span>
+                        </div>
+                        <div id="singapore-airport-view-box-three">
+                            <h2>THE GREATEST AIRPORT IN THE WORLD</h2>
+                            <span className="singapore-airport-hidden-text">
+                                <p>Singapore's Changi Airport is considered one of the best airports in the world... for those who depart from it.</p>
+                                <p>Please enjoy this list of features and amenities that I did not get to enjoy:</p>
+                                <ul>
+                                    <li>Butterfly garden,</li>
+                                    <li>Four-story slide,</li>
+                                    <li>Cinema,</li>
+                                    <li>Swimming pool,</li>
+                                    <li>Art installations,</li>
+                                    <li>Indoor jungle,</li>
+                                    <li>Playground,</li>
+                                    <li>Mirror maze.</li>
+                                </ul>
+                                <footer>There were even more things to see/do in the airport than listed but I am too sad to list them.</footer>
+                            </span>
+                        </div>
                     </div>
                 </div>
             </React.Fragment>
@@ -40,24 +84,26 @@ export default function Singapore() { {
 
         return(
             <React.Fragment>
-                <div ref={wrapperRef} className="main-default-map-view-container">
+                <div id="singapore-main-container">
+                    <div ref={wrapperRef} className="main-default-map-view-container">
 
-                    <div id="singapore-map-image-container">
-                        <Map className="singapore-map-image" map_location={singapore_map} map_image_height={"75%"} map_image_width={"auto"} image_alt={"map of singapore"} />
+                        <div id="singapore-map-image-container">
+                            <Map className="singapore-map-image" map_location={singapore_map} map_image_height={"75%"} map_image_width={"auto"} image_alt={"map of singapore"} />
 
-                        <div id="singapore-map-icon-container-default-view">
-                            <IconButton id="plane-arrival-icon-button" icon_location={plane_arrival_icon} onClick={() => { setShowAirportView(s => !s); animateMap();}}/>
+                            <div id="singapore-map-icon-container-default-view">
+                                <IconButton id="plane-arrival-icon-button" icon_location={plane_arrival_icon} onClick={() => { setShowAirportView(s => !s); animateMap();}}/>
+                            </div>
                         </div>
-                    </div>
 
-                    <div id="singapore-title-container">
-                        <Title main_title={"Singapore."} sub_title={"Click an above location to see more."} />
-                    </div>
+                        <div id="singapore-title-container">
+                            <Title main_title={"Singapore."} sub_title={"Click an above location to see more."} />
+                        </div>
 
+                    </div>
+                    <div id="airport-main-container">
+                        {!showAirportView ? <AirportView /> : null}
+                    </div>
                 </div>
-                   
-                {!showAirportView ? <AirportView /> : null}
-                
             </React.Fragment>
         )
         }
