@@ -9,7 +9,10 @@ import IconButton from './IconButton';
 
 import singapore_map from './img/singapore_map.png';
 import plane_arrival_icon from './img/plane_arrival.svg';
-import singapore_airport_logo from './img/singapore_airport_logo.png';
+import tree_icon from './img/trees.svg';
+import uk_flag from './img/uk_flag.png';
+import abu_dhabi_flag from './img/abu_dhabi_flag.png';
+import singapore_flag from './img/singapore_flag.png';
 
 class AirportView extends Component {
     
@@ -18,9 +21,9 @@ class AirportView extends Component {
             <React.Fragment>
                 <div id="singapore-airport-view-container">
                     <div id="singapore-airport-view-title-container">
-                        <h1 className='left'>LONDON</h1>
-                        <h1 className='center'>ABU DHABI</h1>
-                        <h1 className='right'>SINGAPORE</h1>
+                        <h1 className='left'>LONDON <img src={uk_flag}></img></h1>
+                        <h1 className='center'>ABU DHABI <img src={abu_dhabi_flag}></img></h1>
+                        <h1 className='right'>SINGAPORE <img src={singapore_flag}></img></h1>
                     </div>
 
                     <div id="singapore-airport-view-body-container">
@@ -31,7 +34,6 @@ class AirportView extends Component {
                                 <p>A considerable amount of prerequisites are often overlooked by would-be travellers and social media influencers. </p>
                                 <p>The ability to be <span style={{color: "turquoise"}}>flexible and decisive</span> helped me secure the best possible price for my flight while still maintaining realistic time goals.</p>
                                 <p>A quick sum up of said prerequisites (for entry to Singapore) includes: <span style={{color: "red"}}>COVID-19 documentation, recommended vaccinations, pre-booked residence, and approved airrval card.</span></p>
-                                <footer>More on travel planning can be found here.</footer>
                             </span>
                         </div>
                         <div id="singapore-airport-view-box-two">
@@ -39,10 +41,9 @@ class AirportView extends Component {
                             <span className="singapore-airport-hidden-text">
                                 <p>18 hours is a long time, especially when you are up twelve thousand meters in the air inside a metal can.</p>
                                 <p>It should come at no surprise that if you are planning to come halfway around the world that your initial flight will be long. Luckily, you can take measures to make this experience somewhat bearable without breaking the bank:</p>
-                                <p>FLY WITH A MIDDLE EASTERN AIRLINE.</p>
-                                <p>I flew with Etihad Airways for both legs of the journey and both were bearable compared to the atrocities I would have faced on any of the European airlines.</p>
-                                <p>When booking a flight, use multiple cheap-flight websites such as Skyscanner, Kayak and my personal favourite: Google Flights.</p>
-                                <footer>Make sure to clear your cookies and browsing history often when looking for flights!</footer>
+                                <p><span style={{fontSize: "30px", color: "green"}}>FLY WITH A MIDDLE EASTERN AIRLINE.</span></p>
+                                <p>I flew with <span style={{ color: "gold"}}>Etihad Airways</span> for both legs of the journey and both were bearable compared to the atrocities I would have faced on any of the European airlines.</p>
+                                <p>When booking a flight, use multiple cheap-flight websites such as <span style={{color: "red"}}>Skyscanner, Kayak and my personal favourite: Google Flights.</span></p>
                             </span>
                         </div>
                         <div id="singapore-airport-view-box-three">
@@ -60,7 +61,6 @@ class AirportView extends Component {
                                     <li>Playground,</li>
                                     <li>Mirror maze.</li>
                                 </ul>
-                                <footer>There were even more things to see/do in the airport than listed but I am too sad to list them.</footer>
                             </span>
                         </div>
                     </div>
@@ -74,6 +74,7 @@ class AirportView extends Component {
 export default function Singapore() { {
 
     const [showAirportView, setShowAirportView] = useState(true); 
+
     const wrapperRef = React.useRef();
 
     function animateMap() {
@@ -88,11 +89,16 @@ export default function Singapore() { {
                     <div ref={wrapperRef} className="main-default-map-view-container">
 
                         <div id="singapore-map-image-container">
-                            <Map className="singapore-map-image" map_location={singapore_map} map_image_height={"75%"} map_image_width={"auto"} image_alt={"map of singapore"} />
+                            <Map id="singapore-map-image" map_location={singapore_map} image_alt={"map of singapore"} />
 
-                            <div id="singapore-map-icon-container-default-view">
+                            <div id="plane-arrival-icon-button-container">
                                 <IconButton id="plane-arrival-icon-button" icon_location={plane_arrival_icon} onClick={() => { setShowAirportView(s => !s); animateMap();}}/>
                             </div>
+                            <div id="tree-icon-button-container">
+                                <IconButton id="tree-icon-button" icon_location={tree_icon} onClick={() => { setShowAirportView(s => !s); animateMap();}}/>
+                            </div>
+
+                            
                         </div>
 
                         <div id="singapore-title-container">

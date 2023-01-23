@@ -24,7 +24,7 @@ function App() {
     <div className="container">
       <div id="title-section-container">
         <div id="sea-map-image-container">
-          <Map map_location={sea_map} map_image_height={"100%"} map_image_width={"auto"} image_alt={"map of south east asia"}/>
+          <Map map_location={sea_map} image_alt={"map of south east asia"}/>
         </div>
         <div id="title-container">
           <Title main_title={"Cade In Asia:"} sub_title={"A 3 Month Excursion Exploring the Heart of South East Asia."}/>
