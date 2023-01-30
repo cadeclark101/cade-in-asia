@@ -1,4 +1,5 @@
 import React, { Component, useState } from 'react';
+import $ from 'jquery'; 
 
 import './Singapore.css';
 import './AirportView.css';
@@ -13,6 +14,7 @@ import tree_icon from './img/trees.svg';
 import uk_flag from './img/uk_flag.png';
 import abu_dhabi_flag from './img/abu_dhabi_flag.png';
 import singapore_flag from './img/singapore_flag.png';
+import singapore_jungle from './img/singapore_jungle_vector.svg';
 
 class AirportView extends Component {
     
@@ -70,17 +72,37 @@ class AirportView extends Component {
     }
 }
 
+class TreeTopWalk extends Component {
+    render() {
+        return(
+            <React.Fragment>
+                <div id="singapore-tree-top-walk-container">
+                    <img src={singapore_jungle}></img>
+                </div>
+            </React.Fragment>
+        )
+        }
+}
+
+
 
 export default function Singapore() { {
 
     const [showAirportView, setShowAirportView] = useState(true); 
+    const [showTreeTopWalkView, setShowTreeTopWalkView] = useState(true);
 
     const wrapperRef = React.useRef();
 
-    function animateMap() {
+    function animateMapRight() {
         var wrapper = wrapperRef.current;
         console.log(wrapper);
-        wrapper.classList.toggle('icon-clicked');
+        wrapper.classList.toggle('animate-slide-right');
+    }
+
+    function animateMapFadeOut() {
+        var wrapper = wrapperRef.current;
+        console.log(wrapper);
+        wrapper.classList.toggle('fade-out');
     }
 
         return(
@@ -92,12 +114,11 @@ export default function Singapore() { {
                             <Map id="singapore-map-image" map_location={singapore_map} image_alt={"map of singapore"} />
 
                             <div id="plane-arrival-icon-button-container">
-                                <IconButton id="plane-arrival-icon-button" icon_location={plane_arrival_icon} onClick={() => { setShowAirportView(s => !s); animateMap();}}/>
+                                <IconButton id="plane-arrival-icon-button" icon_location={plane_arrival_icon} onClick={() => { setShowAirportView(s => !s); animateMapRight();}}/>
                             </div>
                             <div id="tree-icon-button-container">
-                                <IconButton id="tree-icon-button" icon_location={tree_icon} onClick={() => { setShowAirportView(s => !s); animateMap();}}/>
+                                <IconButton id="tree-icon-button" icon_location={tree_icon} onClick={() => { setShowTreeTopWalkView(s => !s); animateMapFadeOut();}}/>
                             </div>
-
                             
                         </div>
 
@@ -109,6 +130,11 @@ export default function Singapore() { {
                     <div id="airport-main-container">
                         {!showAirportView ? <AirportView /> : null}
                     </div>
+
+                    <div id="tree-top-walk-main-container">
+                        {!showTreeTopWalkView ? <TreeTopWalk /> : null}
+                    </div>
+                    
                 </div>
             </React.Fragment>
         )
