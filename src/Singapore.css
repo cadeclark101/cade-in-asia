@@ -43,7 +43,7 @@
     position: absolute;
     left: 25%;
     transition: left 1s;
-    border: 1px solid black;
+
     
 }
 
@@ -53,27 +53,43 @@
 }
 
 .main-default-map-view-container.fade-out {
+    -webkit-animation: fadeout 1s linear forwards;
+    animation: fadeout 1s linear forwards;
+}
+
+@keyframes fadeout {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+
+@-webkit-keyframes fadeout {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+
+.main-default-map-view-container.hide {
     display: none;
-    opacity: 0;
-    transition: visibility 0s 2s, opacity 2s linear;
 }
 
 #singapore-main-container {
+    position: relative;
     width: 99vw;
     height: 99vh;
-    border: 1px solid yellow;
 }
 
 
-#singapore-tree-top-walk-container img {
-    width: 500px;
-    height: 100%;
+#tree-top-walk-container img {
+    width: 100%;
+    height: auto;
 }
 
-#singapore-tree-top-walk-container {
-    border: solid red 1px;
+#tree-top-walk-container {
+    height: 100vh;
+    width: 99vw;
+    overflow: hidden;
 }
 
 #tree-top-walk-main-container {
-    border: 1px solid pink;
+    position: absolute;
+    top: 200vh;
 }

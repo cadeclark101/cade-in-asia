@@ -1,4 +1,4 @@
-#singapore-airport-view-container {
+#airport-view-container {
     width: 50%;
     right: 0%;
     height: 100vh;
@@ -6,13 +6,13 @@
     box-shadow: 1px 0 5px -1px #f4ab31;
 }
 
-#singapore-airport-view-title-container {
+#airport-view-title-container {
     width: 99%;
     vertical-align: auto;
 }
 
 
-#singapore-airport-view-body-container {
+#airport-view-body-container {
     margin-top: 30px;
     margin-left: 30px;
     margin-right: 30px;
@@ -24,63 +24,63 @@
 }
 
 
-#singapore-airport-view-box-one {
+#airport-view-box-one {
     height: 100%;
     width: 100%;
     text-align: center;
     border-right: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-#singapore-airport-view-box-one:hover {
+#airport-view-box-one:hover {
     background-color: rgba(52, 42, 41, 0.9);
 }
 
-.singapore-airport-hidden-text {
+.airport-hidden-text {
     display: none;
 }
 
-#singapore-airport-view-box-one:hover .singapore-airport-hidden-text {
+#airport-view-box-one:hover .airport-hidden-text {
     display: block;
 }
 
-#singapore-airport-view-box-one:hover h2 {
+#airport-view-box-one:hover h2 {
     display: none;
 }
 
-#singapore-airport-view-box-two {
+#airport-view-box-two {
     height: 100%;
     width: 100%;
     text-align: center;
     border-right: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-#singapore-airport-view-box-two:hover {
+#airport-view-box-two:hover {
     background-color: rgba(52, 42, 41, 0.9);
 }
 
-#singapore-airport-view-box-two:hover .singapore-airport-hidden-text {
+#airport-view-box-two:hover .airport-hidden-text {
     display: block;
 }
 
-#singapore-airport-view-box-two:hover h2 {
+#airport-view-box-two:hover h2 {
     display: none;
 }
 
-#singapore-airport-view-box-three {
+#airport-view-box-three {
     height: 100%;
     width: 100%;
     text-align: center;
 }
 
-#singapore-airport-view-box-three:hover {
+#airport-view-box-three:hover {
     background-color: rgba(52, 42, 41, 0.9);
 }
 
-#singapore-airport-view-box-three:hover .singapore-airport-hidden-text {
+#airport-view-box-three:hover .airport-hidden-text {
     display: block;
 }
 
-#singapore-airport-view-box-three:hover h2 {
+#airport-view-box-three:hover h2 {
     display: none;
 }
 
