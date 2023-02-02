@@ -8,12 +8,12 @@ import Title from './Title';
 import IconButton from './IconButton';
 import TreeTopWalk from './TreeTopWalk';
 
-import singapore_map from './img/singapore_map.png';
-import plane_arrival_icon from './img/plane_arrival.svg';
-import tree_icon from './img/trees.svg';
+import singapore_map from './img/singapore/singapore_map.png';
+import plane_arrival_icon from './img/icons/plane_arrival.svg';
+import tree_icon from './img/icons/trees.svg';
 import uk_flag from './img/uk_flag.png';
 import abu_dhabi_flag from './img/abu_dhabi_flag.png';
-import singapore_flag from './img/singapore_flag.png';
+import singapore_flag from './img/singapore/singapore_flag.png';
 
 
 class AirportView extends Component {

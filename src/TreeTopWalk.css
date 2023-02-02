@@ -18,17 +18,16 @@ li {
 
 .slide {
     position: absolute;
-    background-color: rgba(52, 42, 41, 0.3);
     text-align: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 99vw;
+    height: 100vh;
 }
 
 #slide-1 {
-    width: 99vw;
-    height: 100vh;
     display: inline;
-    background-image: url(./img/singapore_jungle_vector.svg);
-    background-repeat: no-repeat;
-    background-position: center;
+    background-image: url(./img/singapore/treetopwalk/singapore_jungle_vector.svg);
     background-size: 100%;
     overflow: hidden;
 }
@@ -50,16 +49,39 @@ li {
 }
 
 #slide-2 {
-    width: 99vw;
-    height: 100vh;
     display: none;
+    background-image: url(./img/singapore/treetopwalk/monkeys.png);
+    background-size: auto;
 }
 
 #slide-3 {
-    width: 99vw;
-    height: 100vh;
     display: none;
-    background-color: green;
+    background-image: url(./img/singapore/treetopwalk/cade_on_bridge.png);
+    background-size: auto;
+}
+
+#slide-4 {
+    display: none;
+    background-image: url(./img/singapore/treetopwalk/cerys_on_walkway.png);
+    background-size: auto;
+}
+
+#slide-5 {
+    display: none;
+    background-image: url(./img/singapore/treetopwalk/cade_with_monkeys.png);
+    background-size: auto;
+}
+
+#slide-6 {
+    display: none;
+    background-image: url(./img/singapore/treetopwalk/cade_with_umbrella.png);
+    background-size: auto;
+}
+
+#slide-7 {
+    display: none;
+    background-image: url(./img/singapore/treetopwalk/cerys_with_tree.png);
+    background-size: auto;
 }
 
 .control-button {

@@ -2,7 +2,7 @@ import React from 'react';
 
 
 import sea_map from './img/sea.png';
-import singapore_flag from './img/singapore_flag.png';
+import singapore_flag from './img/singapore/singapore_flag.png';
 import malaysia_flag from './img/malaysia_flag.png';
 import thailand_flag from './img/thailand_flag.png';
 import cambodia_flag from './img/cambodia_flag.png';

@@ -50,6 +50,10 @@ export default class TreeTopWalk extends Component {
                             </div>
                             <div className="slide" id="slide-2"></div>
                             <div className="slide" id="slide-3"></div>
+                            <div className="slide" id="slide-4"></div>
+                            <div className="slide" id="slide-5"></div>
+                            <div className="slide" id="slide-6"></div>
+                            <div className="slide" id="slide-7"></div>
                         </li>
                         <button className="control-button arrow arrow-right" id="next-button" onClick={clickNext}></button>
                         <button className="control-button arrow arrow-left" id="previous-button" onClick={clickPrevious}></button>
