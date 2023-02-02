@@ -1,5 +1,4 @@
 import React, { Component, useState } from 'react';
-import $ from 'jquery'; 
 
 import './Singapore.css';
 import './AirportView.css';
@@ -7,6 +6,7 @@ import './AirportView.css';
 import Map from './Map';
 import Title from './Title';
 import IconButton from './IconButton';
+import TreeTopWalk from './TreeTopWalk';
 
 import singapore_map from './img/singapore_map.png';
 import plane_arrival_icon from './img/plane_arrival.svg';
@@ -14,7 +14,7 @@ import tree_icon from './img/trees.svg';
 import uk_flag from './img/uk_flag.png';
 import abu_dhabi_flag from './img/abu_dhabi_flag.png';
 import singapore_flag from './img/singapore_flag.png';
-import singapore_jungle from './img/singapore_jungle_vector.svg';
+
 
 class AirportView extends Component {
     
@@ -72,24 +72,12 @@ class AirportView extends Component {
     }
 }
 
-class TreeTopWalk extends Component {
-    render() {
-        return(
-            <React.Fragment>
-                <div id="tree-top-walk-container">
-                    <img src={singapore_jungle}></img>
-                </div>
-            </React.Fragment>
-        )
-        }
-}
 
 
 export default function Singapore() { {
 
     const [showAirportView, setShowAirportView] = useState(true); 
     const [showTreeTopWalkView, setShowTreeTopWalkView] = useState(true);
-    const [showSingaporeMapView, setShowSingaporeMapView] = useState(false);
 
     const wrapperRef = React.useRef();
 

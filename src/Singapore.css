@@ -77,18 +77,6 @@
     height: 99vh;
 }
 
-
-#tree-top-walk-container img {
-    width: 100%;
-    height: auto;
-}
-
-#tree-top-walk-container {
-    height: 100vh;
-    width: 99vw;
-    overflow: hidden;
-}
-
 #tree-top-walk-main-container {
     position: absolute;
     top: 200vh;

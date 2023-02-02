@@ -1,0 +1,103 @@
+
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+
+#tree-top-walk-carousel {
+    height: 100vh;
+    width: 99vw;
+    perspective: 100px;
+}
+
+#slides-container-li {
+    display: flex;
+}
+
+.slide {
+    position: absolute;
+    background-color: rgba(52, 42, 41, 0.3);
+    text-align: center;
+}
+
+#slide-1 {
+    width: 99vw;
+    height: 100vh;
+    display: inline;
+    background-image: url(./img/singapore_jungle_vector.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    overflow: hidden;
+}
+
+#slide-1 #tree-top-walk-info-box {
+    position: absolute;
+    width: 25%;
+    height: 25%;
+    top: 35vh;
+    left: 35vw;
+    background-color: rgba(52, 42, 41, 0.9);
+    color: white;
+}
+
+#slide-1 span {
+    color: white;
+    font: 900 200% Century Gothic, Arial;
+    text-shadow: 2px 2px 0px black
+}
+
+#slide-2 {
+    width: 99vw;
+    height: 100vh;
+    display: none;
+}
+
+#slide-3 {
+    width: 99vw;
+    height: 100vh;
+    display: none;
+    background-color: green;
+}
+
+.control-button {
+    position: relative;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    margin: 10px;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
+
+.arrow {
+    width: 15px;
+    padding: 1%;
+    height: 15px;
+    border: 10px solid #ffffff;
+    border-left: 0;
+    border-top: 0;
+}
+
+.arrow-up { transform: rotate(225deg); }
+
+.arrow-right { transform: rotate(-45deg); }
+
+.arrow-left { transform: rotate(135deg); }
+
+#next-button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+#previous-button {
+    position: absolute;
+    bottom: 0;
+}
+
+#return-to-map-button {
+    position: absolute;
+}
