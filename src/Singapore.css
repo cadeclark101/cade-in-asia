@@ -21,20 +21,36 @@
     position: relative;
 }
 
-#plane-arrival-icon-button-container {
+.icon-container {
     position: absolute;
     width: auto;
     height: auto;
+    border-radius: 100%;
+}
+
+
+#plane-arrival-icon-button-container {
     top: 35%;
     left: 75%;
+    border: 2px solid white;
 }
 
 #tree-icon-button-container {
-    position: absolute;
-    width: auto;
-    height: auto;
     top: 35%;
     left: 40%;
+    border: 2px solid green;
+}
+
+#china-town-icon-button-container {
+    top: 57%;
+    left: 42%;
+    border: 2px solid red;
+}
+
+#gardens-by-bay-icon-button-container {
+    top: 59%;
+    left: 48%;
+    border: 2px solid turquoise;
 }
 
 
@@ -57,6 +73,11 @@
     animation: fadeout 1s linear forwards;
 }
 
+.main-default-map-view-container.fade-in {
+    -webkit-animation: fadein 1s linear forwards;
+    animation: fadein 1s linear forwards;
+}
+
 @keyframes fadeout {
     0% { opacity: 1; }
     100% { opacity: 0; }
@@ -65,6 +86,16 @@
 @-webkit-keyframes fadeout {
     0% { opacity: 1; }
     100% { opacity: 0; }
+  }
+
+@keyframes fadein {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+@-webkit-keyframes fadein {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
   }
 
 .main-default-map-view-container.hide {

@@ -6,13 +6,14 @@
     box-shadow: 1px 0 5px -1px #f4ab31;
 }
 
-#airport-view-title-container {
+#title-container {
+    position: relative;
+    top: 15%;
     width: 99%;
-    vertical-align: auto;
 }
 
 
-#airport-view-body-container {
+#body-container {
     margin-top: 30px;
     margin-left: 30px;
     margin-right: 30px;
@@ -24,63 +25,63 @@
 }
 
 
-#airport-view-box-one {
+#box-one {
     height: 100%;
     width: 100%;
     text-align: center;
     border-right: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-#airport-view-box-one:hover {
+#box-one:hover {
     background-color: rgba(52, 42, 41, 0.9);
 }
 
-.airport-hidden-text {
+.hidden-text {
     display: none;
 }
 
-#airport-view-box-one:hover .airport-hidden-text {
+#box-one:hover .hidden-text {
     display: block;
 }
 
-#airport-view-box-one:hover h2 {
+#box-one:hover h2 {
     display: none;
 }
 
-#airport-view-box-two {
+#box-two {
     height: 100%;
     width: 100%;
     text-align: center;
     border-right: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-#airport-view-box-two:hover {
+#box-two:hover {
     background-color: rgba(52, 42, 41, 0.9);
 }
 
-#airport-view-box-two:hover .airport-hidden-text {
+#box-two:hover .hidden-text {
     display: block;
 }
 
-#airport-view-box-two:hover h2 {
+#box-two:hover h2 {
     display: none;
 }
 
-#airport-view-box-three {
+#box-three {
     height: 100%;
     width: 100%;
     text-align: center;
 }
 
-#airport-view-box-three:hover {
+#box-three:hover {
     background-color: rgba(52, 42, 41, 0.9);
 }
 
-#airport-view-box-three:hover .airport-hidden-text {
+#box-three:hover .hidden-text {
     display: block;
 }
 
-#airport-view-box-three:hover h2 {
+#box-three:hover h2 {
     display: none;
 }
 

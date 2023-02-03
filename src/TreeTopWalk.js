@@ -7,14 +7,12 @@ export default class TreeTopWalk extends Component {
 
     render() {
 
+        let currentSlide = 0;
+
         function getSlides() {
             var slides = $("#slides-container-li").children();
             return slides;
         }
-
-        let currentSlide = 0;
-
-
 
         function clickNext() {
         var slides = getSlides();
@@ -57,7 +55,6 @@ export default class TreeTopWalk extends Component {
                         </li>
                         <button className="control-button arrow arrow-right" id="next-button" onClick={clickNext}></button>
                         <button className="control-button arrow arrow-left" id="previous-button" onClick={clickPrevious}></button>
-                        <button className="control-button arrow arrow-up" id="return-to-map-button"></button>
                     </div>
 
             </React.Fragment>

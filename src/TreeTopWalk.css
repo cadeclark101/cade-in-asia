@@ -103,8 +103,6 @@ li {
     border-top: 0;
 }
 
-.arrow-up { transform: rotate(225deg); }
-
 .arrow-right { transform: rotate(-45deg); }
 
 .arrow-left { transform: rotate(135deg); }
