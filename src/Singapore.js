@@ -6,8 +6,9 @@ import Map from './Map';
 import Title from './Title';
 import IconButton from './IconButton';
 import TreeTopWalk from './TreeTopWalk';
+import Chinatown from './Chinatown';
 import ReturnToMapButton from './ReturnToMapButton';
-import AirportView from './AirportView';
+import AirportView from './Airport';
 
 import singapore_map from './img/singapore/singapore_map.png';
 
@@ -22,6 +23,7 @@ export default function Singapore() { {
 
     const [showAirportView, setShowAirportView] = useState(true); 
     const [showTreeTopWalkView, setShowTreeTopWalkView] = useState(true);
+    const [showChinatownView, setShowChinatownView] = useState(true);
     const [showReturnToMapButton, setShowReturnToMapButton] = useState(true);
 
     const wrapperRef = React.useRef();
@@ -41,6 +43,7 @@ export default function Singapore() { {
             setShowReturnToMapButton(false);
         }, 500);
     }
+
 
     function handleReturnToMap() {
         var wrapper = wrapperRef.current;
@@ -87,6 +90,10 @@ export default function Singapore() { {
                         {!showReturnToMapButton ? <ReturnToMapButton onClick={() => { handleReturnToMap();}} /> : null}
                     </div>
                     
+                    <div id="china-town-main-container">
+                        <Chinatown />
+                        {!showReturnToMapButton ? <ReturnToMapButton onClick={() => { handleReturnToMap();}} /> : null}
+                    </div>
 
             </React.Fragment>
         )

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import './AirportView.css';
+import './Airport.css';
 
 import uk_flag from './img/uk_flag.png';
 import abu_dhabi_flag from './img/abu_dhabi_flag.png';
