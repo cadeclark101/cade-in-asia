@@ -8,7 +8,9 @@ img {
     height: 100%;
 }
 
-map #area {
-    background-color: red;
+.noodle-stand-map-container {
+    position: relative;
 }
+
+
 
