@@ -23,7 +23,6 @@ export default function Singapore() { {
 
     const [showAirportView, setShowAirportView] = useState(true); 
     const [showTreeTopWalkView, setShowTreeTopWalkView] = useState(true);
-    const [showChinatownView, setShowChinatownView] = useState(true);
     const [showReturnToMapButton, setShowReturnToMapButton] = useState(true);
 
     const wrapperRef = React.useRef();
@@ -92,7 +91,6 @@ export default function Singapore() { {
                     
                     <div id="china-town-main-container">
                         <Chinatown />
-                        {!showReturnToMapButton ? <ReturnToMapButton onClick={() => { handleReturnToMap();}} /> : null}
                     </div>
 
             </React.Fragment>
