@@ -126,7 +126,7 @@ h1 img{
     border-radius: 5px;
 }
 
-p {
+.airport-text {
     font: 700 15px Century Gothic, Arial;
     font-weight: bold;
     color: white;
