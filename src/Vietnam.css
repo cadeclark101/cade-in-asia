@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Bungee+Inline');
+
+.vietnam-container {
+    height: 99vh;
+    width: 100vw;
+    background-color: rgb(255,200,87,255);
+    transition: margin-left .5s;
+}
+
+
+.vietnam-side-nav {
+    height: 100%; 
+    width: 10%; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0; 
+    left: 0;
+    background-color: rgb(50,48,49,255); 
+    overflow-x: hidden; 
+    transition: 0.5s; 
+}
+
+.vietnam-side-nav a {
+    text-decoration: none;
+    font-size: 150%;
+    color: rgb(50,48,49,255);
+    display: block;
+    transition: 0.3s;
+
+    font-family: "Bungee Inline", cursive;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    font-size: 120%;
+    letter-spacing: 3px;
+    word-spacing: 3px;
+    color: rgb(255, 0, 0);
+    text-shadow: rgb(255, 0, 0) 2px 2px 0px;
+    color: rgb(255,200,87,255);
+    padding-top: 10%;
+    padding-bottom: 10%;
+    line-height: 250%;
+}
+
+.vietnam-side-nav a:hover {
+    opacity: 0.5;
+}
+
+.vietnam-side-nav-close-btn-container {
+    bottom: 0;
+    position: absolute;
+    background-color: rgb(50,48,49,255);
+    width: 100%;
+    line-height: 250%;
+}
+
+.vietnam-side-nav-open-btn-container {
+    bottom: 0;
+    position: absolute;
+    background-color: rgb(50,48,49,255);
+    width: 10%;
+    line-height: 250%;
+}
+
+
+#vietnam-side-nav-open-btn{
+    text-decoration: none;
+    font-size: 150%;
+    color: rgb(50,48,49,255);
+    display: block;
+    transition: 0.3s;
+
+    font-family: "Bungee Inline", cursive;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    font-size: 120%;
+    letter-spacing: 3px;
+    word-spacing: 3px;
+    color: rgb(255, 0, 0);
+    text-shadow: rgb(255, 0, 0) 2px 2px 0px;
+    color: rgb(255,200,87,255);
+    padding-top: 10%;
+    padding-bottom: 10%;
+    line-height: 250%;
+}
+
+.vietnam-title-container {
+    margin-top: 2%;
+    width: 100%;
+    display: inline-block;
+    background-color: rgb(50,48,49,255);
+}
+
+.body-container {
+    margin-top: 1%;
+    height: 80%;
+}
+
+.opening-container {
+    width: 100%;
+    height: 20%;
+    background-color: rgb(50,48,49,255);
+}
+
+
+#vietnam-title-text{
+    font-family: "Bungee Inline", cursive;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    font-size: 1000%;
+    letter-spacing: 3px;
+    word-spacing: 3px;
+    color: rgb(255, 0, 0);
+    text-shadow: rgb(255,200,87,255) -6px 6px 0px;
+    margin: 0;
+    padding: 0;
+    line-height: 100%;
+}

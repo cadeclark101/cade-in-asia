@@ -1,0 +1,59 @@
+.container {  
+  background-image: url('./img/sea.png');
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  outline: 1px solid black;
+  position: absolute;
+  background-color: #354c52;
+}
+
+.title {
+  top: 40%;
+  position: relative;
+  line-height: 500%;
+}
+
+.navbar {
+  top: 60%;
+  position: absolute;
+  width: 100vw;
+}
+
+.flag-button {
+  margin: 1%;
+  left: 30%;
+}
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Bungee+Inline');
+  #title-text{
+    font-family: "Bungee Inline", cursive;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    font-size: 1000%;
+    letter-spacing: 3px;
+    word-spacing: 3px;
+    color: rgb(253, 255, 255);
+    text-shadow: rgb(0, 213, 255) -6px 6px 0px;
+    margin: 0;
+    padding: 0;
+}
+
+#subtitle-text{
+  font-family: "Bungee Inline", cursive;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  font-size: 200%;
+  letter-spacing: 3px;
+  word-spacing: 3px;
+  color: rgb(253, 255, 255);
+  text-shadow: rgb(0, 213, 255) 1px 1px 0px;
+  margin: 0;
+  padding: 0;
+}
+
+
